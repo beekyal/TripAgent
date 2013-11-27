@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterUserActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollViewRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewPersonalData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/label_textView_PersonalData" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_username_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_password_hint"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editTextNameFirst"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_nameFirst_hint"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextNameLast"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_nameLast_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editNumberPhone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_numberInput_phone_hint"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editEmailAdress"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_email_hint"
+                android:inputType="textEmailAddress" />
+
+            <LinearLayout
+		        android:id="@+id/linearLayout_startDate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@+id/editEmailAdress" >
+        
+		            <EditText
+		                android:id="@+id/editBirthYear"
+		                android:layout_width="250dp"
+		                android:layout_height="wrap_content"
+		                android:ems="10"
+		                android:hint="@string/label_textInput_BirthYear_hint"
+		                android:inputType="date" />
+		            
+		            
+		             <ImageButton
+			            android:id="@+id/imageButtonBirthYear"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:contentDescription="@string/label_textInput_BirthYear_hint"
+			            android:src="@drawable/calendar"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCarData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/label_textView_CarData" />
+
+            <EditText
+                android:id="@+id/editCarRegistration"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_CarRegistration_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editCarModel"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_CarModel_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editNumberOfSeats"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_NumberOfSeats_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editGassExpenditure"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/label_textInput_GassExpenditure_hint"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/imageViewPictureCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_add_person" />
+            
+            <LinearLayout
+		        android:id="@+id/linearLayout_buttons"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@+id/editGassExpenditure" >
+
+	            <Button
+	            	android:id="@+id/buttonRegister"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:text="@string/label_button_register" />
+	
+	            <Button
+	                android:id="@+id/buttonUpdate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:text="@string/label_button_update" />
+	            
+	          	<Button
+	                android:id="@+id/buttoncarPicture"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:text="@string/label_button_carpicture" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

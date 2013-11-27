@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollViewAlertDialogDetailsTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewDepartureDate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textView_departureDate" />
+            
+            <TextView
+                android:id="@+id/textViewDepartureDate_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewTotalCost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textInput_totalCost_hint" />
+            
+            <TextView
+                android:id="@+id/textViewTotalCost_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewPerPersonCost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textInput_perPersonCost_hint" />
+
+            <TextView
+                android:id="@+id/textViewPerPersonCost_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewNumberofSeats_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textInput_NumberOfSeats_hint" />
+
+            <TextView
+                android:id="@+id/textViewNumberofSeats_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />            
+
+            <TextView
+                android:id="@+id/textViewComment_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textInput_comment_hint" />
+
+            <TextView
+                android:id="@+id/textViewComment_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+            
+            <ImageView
+                android:id="@+id/imageViewPictureCar_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_add_person" />
+            
+            <LinearLayout
+                android:id="@+id/LinearLayoutUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linearLayoutButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <Button
+                    android:id="@+id/buttonBack_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_button_back" />
+                
+                <Button
+                    android:id="@+id/buttonUpdate_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_button_update" />
+
+                <Button
+                    android:id="@+id/buttonBooking_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_booking" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

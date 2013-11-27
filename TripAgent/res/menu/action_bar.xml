@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/action_bar_post_trip"
+        android:icon="@drawable/ic_action_add_group"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/label_textView_actionbarMenuPostTrip"/>
+    	
+	<item 
+        android:id="@+id/action_bar_history"
+        android:icon="@drawable/ic_action_collapse"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/label_textView_actionbarMenuHistory"/>
+	
+	<item 
+        android:id="@+id/action_bar_editProfile"
+        android:icon="@drawable/ic_action_person"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/label_textView_actionbarMenuEditProfile"/>
+	
+	<item 
+        android:id="@+id/action_bar_search"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/label_button_search"/>
+	
+	
+	
+	<!-- buttons when you're logged out -->
+	<item 
+        android:id="@+id/action_bar_register"
+        android:icon="@drawable/ic_action_add_person"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/label_button_register"/>
+	<item 
+        android:id="@+id/action_bar_logIn"
+        android:icon="@drawable/ic_action_new_account"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/label_button_logIn"/>
+	
+	<item 
+        android:id="@+id/action_bar_logOut"
+        android:icon="@drawable/ic_action_backspace"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/label_button_logOut"/>
+	
+	
+</menu>

@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/label_textInput_startDate_hint"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SearchActivity" >
+
+    <TextView
+        android:id="@+id/textViewStartingDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/label_textView_startingDestination" />
+<!-- 
+    <Spinner
+        android:id="@+id/polazisno_mjesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/textViewStartingDestination" />
+ -->
+ 	<AutoCompleteTextView 
+ 	    android:id="@+id/autocompleteCityStart"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/textViewStartingDestination"
+		android:completionThreshold="1"/>
+ 
+    <TextView
+        android:id="@+id/textViewEndingDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/autocompleteCityStart"
+        android:text="@string/label_textView_endingDestination" />
+<!-- 
+    <Spinner
+        android:id="@+id/odredisno_mjesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/textViewEndingDestination" />
+ -->
+ 
+  	<AutoCompleteTextView 
+ 	    android:id="@+id/autocompleteCityDestination"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/textViewEndingDestination"
+		android:completionThreshold="1"/>
+  	
+  	
+    <TextView
+        android:id="@+id/textViewDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autocompleteCityDestination"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:text="@string/label_textView_departureDate" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/textViewDepartureDate" >
+
+        <EditText
+            android:id="@+id/editTextStartDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/label_textInput_startDate_hint"
+            android:inputType="date" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/imageButtonStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_textInput_startDate_hint"
+            android:src="@drawable/calendar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_departureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/linearLayout_startDate" >
+
+        <EditText
+            android:id="@+id/editTextFinishDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/label_textInput_finishDate_hint"
+            android:inputType="date" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDepartureDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_textInput_finishDate_hint"
+            android:src="@drawable/calendar" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStartingDestination"
+        android:layout_below="@+id/linearLayout_departureDate"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_button_search" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TripAgent</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_booking">Apply</string>
+    <!-- TextView labels -->
+    <string name="label_textView_PersonalData">Personal Data</string>
+    <string name="label_textView_CarData">Car Data</string>
+    <string name="label_textView_startingDestination">Starting destination:</string>
+    <string name="label_textView_endingDestination">Ending destination:</string>
+    <string name="label_textView_departureDate">Date of departure</string>
+    <string name="label_textView_actionbarMenuHistory">History</string>
+    <string name="label_textView_actionbarMenuPostTrip">Post a trip</string>
+    <string name="label_textView_actionbarMenuEditProfile">EditProfile</string>
+    <string name="label_textView_carNumberofSeats">Number of available seats</string>
+    <!-- TextInput hints -->
+    <string name="label_textInput_startDate_hint">Starting date</string>
+    <string name="label_textInput_finishDate_hint">Ending date</string>
+    <string name="label_textInput_username_hint">Username</string>
+    <string name="label_textInput_password_hint">Password</string>
+    <string name="label_textInput_email_hint">E-mail address</string>
+    <string name="label_textInput_comment_hint">Comment</string>
+    <string name="label_numberInput_phone_hint">Phone number</string>
+    <string name="label_textInput_nameFirst_hint">First Name</string>
+    <string name="label_textInput_nameLast_hint">Last Name</string>
+    <string name="label_textInput_BirthYear_hint">Birthdate</string>
+    <string name="label_textInput_CarRegistration_hint">Registration</string>
+    <string name="label_textInput_CarModel_hint">Car Model</string>
+    <string name="label_textInput_NumberOfSeats_hint">Number of Seats</string>
+    <string name="label_textInput_GassExpenditure_hint">Gass Expenditure L/100km</string>
+    <string name="label_textInput_totalCost_hint">Total cost</string>
+    <string name="label_textInput_perPersonCost_hint">Per person cost</string>
+    <!-- Button labels -->
+    <string name="label_button_register">Register</string>
+    <string name="label_button_update">Update</string>
+    <string name="label_button_logIn">Log In</string>
+    <string name="label_button_preview">Preview</string>
+    <string name="label_button_back">Back</string>
+    <string name="label_button_search">Search</string>
+    <string name="label_button_history">History</string>
+    <string name="label_button_logOut">Log Out</string>
+    <string name="label_button_postTrip">Post</string>
+    <string name="label_button_carpicture">Picture</string>
+    <!-- Messages -->
+    <string name="message_error_NoUser">No User</string>
+    <string name="message_error">Error</string>
+    <string name="message_error_CallingRequestType">Error calling request type</string>
+    <string name="message_info_clickOnListItem">You clicked on list</string>
+    <string name="message_info_clickOnButton">You clicked on the button list</string>
+    <string name="message_progressDialog">Working..</string>
+    <!-- Activity titles -->
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_register_user">Register User</string>
+    <string name="title_activity_trip_post">TripPostActivity</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="title_alert_dialog_details">Details</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_history">HistoryActivity</string>
+
+</resources>

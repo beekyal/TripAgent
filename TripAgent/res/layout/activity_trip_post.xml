@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TripPostActivity" > 
+
+    <ScrollView
+        android:id="@+id/scrollViewTripPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutTripPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewStartingDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textView_startingDestination" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteCityStart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1" />
+
+            <TextView
+                android:id="@+id/textViewEndingDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textView_endingDestination" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteCityDestination"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1" />
+
+            <TextView
+                android:id="@+id/textViewDepartureDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textView_departureDate" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editTextStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/label_textInput_startDate_hint"
+                    android:inputType="date" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonTripDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/label_textInput_startDate_hint"
+                    android:src="@drawable/calendar" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextTotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/label_textInput_totalCost_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextPerPersonCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/label_textInput_perPersonCost_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/label_textInput_comment_hint"
+                android:maxLength="160" />
+            
+            <TextView
+                android:id="@+id/textViewCarNumberofSeats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_textView_carNumberofSeats" />
+            <NumberPicker
+                android:id="@+id/numberPickerCarSeatNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonPostTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/label_button_postTrip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
