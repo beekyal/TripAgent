@@ -16,6 +16,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
@@ -239,12 +240,6 @@ public class SearchResultsActivity extends ListActivity implements OnRequestDone
         public void onClick(View v) {
 			final int position = getListView().getPositionForView(v);    
             if (position != ListView.INVALID_POSITION) {
-            	//message to display once we've clicked Appropriate button
-	            /*
-	            Toast.makeText(SearchResultsActivity.this
-	               		, R.string.message_info_clickOnButton
-	               		, Toast.LENGTH_SHORT).show();
-	            */
             	startApplicationProcess(position);
             } 
         }	
@@ -252,16 +247,25 @@ public class SearchResultsActivity extends ListActivity implements OnRequestDone
 
     
     
-    private void startApplicationProcess(int position) {
-    	//list of values to be sent
-    	List<NameValuePair> values = new ArrayList<NameValuePair>();
- 		values.add(new BasicNameValuePair("id", searchList.get(position).getId() + ""));		
- 		values.add(new BasicNameValuePair("username", Settings.getInstance().getUser().getUsername().toString()));
- 		//Log.d(TAG, "username: " + Settings.getInstance().getUser().getUsername());
- 		
- 		//Request to the server for results
- 		AsyncRequest apply = new AsyncRequest(AsyncRequest.TYPE_TRIP_APPLY, values, mDialog, this);
- 		apply.execute();
+    @SuppressLint("ShowToast")
+	private void startApplicationProcess(int position) {
+    	//check to see if the user is logged in to start the appropriate request to the server, or to display the message accordingly
+    	if (Settings.getInstance().isUserLoggedIn()) {
+    		//list of values to be sent
+        	List<NameValuePair> values = new ArrayList<NameValuePair>();
+     		values.add(new BasicNameValuePair("id", searchList.get(position).getId() + ""));		
+     		values.add(new BasicNameValuePair("username", Settings.getInstance().getUser().getUsername().toString()));
+     		//Log.d(TAG, "username: " + Settings.getInstance().getUser().getUsername());
+     		
+     		//Request to the server for results
+     		AsyncRequest apply = new AsyncRequest(AsyncRequest.TYPE_TRIP_APPLY, values, mDialog, this);
+     		apply.execute();
+    	} else {
+    		//Message to be displayed in case the user is not logged in
+    		Toast.makeText(getApplicationContext()
+    				, R.string.message_error_UserNotLoggedIn
+    				, Toast.LENGTH_LONG).show();
+    	}
     }
     
     /**
@@ -417,16 +421,4 @@ public class SearchResultsActivity extends ListActivity implements OnRequestDone
 
 		return;		
 	}
-
-	//case statement for when any other button is clicked that's not located on the list of the search results
-	/*@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.buttonBack:
-			finish();
-			break;
-		default:
-			break;
-		}	
-	}*/
 }

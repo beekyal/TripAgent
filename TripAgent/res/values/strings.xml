@@ -46,6 +46,7 @@
     <string name="message_error_NoUser">No User</string>
     <string name="message_error">Error</string>
     <string name="message_error_CallingRequestType">Error calling request type</string>
+    <string name="message_error_UserNotLoggedIn">You must be logged in to perform selected action!</string>
     <string name="message_info_clickOnListItem">You clicked on list</string>
     <string name="message_info_clickOnButton">You clicked on the button list</string>
     <string name="message_progressDialog">Working..</string>

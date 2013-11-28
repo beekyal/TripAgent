@@ -129,7 +129,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050031;
+        public static final int hello_world=0x7f050032;
         public static final int label_booking=0x7f050002;
         public static final int label_button_back=0x7f050020;
         public static final int label_button_carpicture=0x7f050025;
@@ -177,17 +177,18 @@ public final class R {
         /**  Messages 
          */
         public static final int message_error_NoUser=0x7f050026;
-        public static final int message_info_clickOnButton=0x7f05002a;
-        public static final int message_info_clickOnListItem=0x7f050029;
-        public static final int message_progressDialog=0x7f05002b;
-        public static final int title_activity_history=0x7f050032;
-        public static final int title_activity_register_user=0x7f05002d;
+        public static final int message_error_UserNotLoggedIn=0x7f050029;
+        public static final int message_info_clickOnButton=0x7f05002b;
+        public static final int message_info_clickOnListItem=0x7f05002a;
+        public static final int message_progressDialog=0x7f05002c;
+        public static final int title_activity_history=0x7f050033;
+        public static final int title_activity_register_user=0x7f05002e;
         /**  Activity titles 
          */
-        public static final int title_activity_search=0x7f05002c;
-        public static final int title_activity_search_results=0x7f05002f;
-        public static final int title_activity_trip_post=0x7f05002e;
-        public static final int title_alert_dialog_details=0x7f050030;
+        public static final int title_activity_search=0x7f05002d;
+        public static final int title_activity_search_results=0x7f050030;
+        public static final int title_activity_trip_post=0x7f05002f;
+        public static final int title_alert_dialog_details=0x7f050031;
     }
     public static final class style {
         /** 
